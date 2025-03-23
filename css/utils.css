@@ -1,0 +1,104 @@
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-X) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-X);
+}
+
+.container-wide {
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+.button-accent {
+    border: none;
+    background-color: var(--color-light);
+    border-radius: var(--radius-30);
+    height: var(--large-height-UI);
+    font-size: var(--fs-14px);
+    color: var(--color-dark);
+    font-weight: var(--bold);
+    font-family: inherit;
+    padding-inline: 1.625rem;
+    white-space: nowrap;
+    transition-duration: var(--transition-duration);
+}
+
+.button-accent:hover {
+    background-color: var(--color-light-gray);
+}
+
+.button--transparent {
+    border: none;
+    background: none;
+}
+
+.button-accent--transparent {
+    display: inline-flex;
+    position: relative;
+    opacity: 0.8;
+    transition-duration: var(--transition-duration);
+    height: var(--base-height-UI);
+    border: var(--border);
+    text-transform: uppercase;
+    padding: 0 5rem 0 2rem;
+    border-radius: var(--radius-pill);
+    font-weight: var(--bold);
+    color: var(--color-light);
+}
+
+.button-accent--transparent::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    aspect-ratio: 1;
+    background: url("../assets/icons/arrow-top-right.svg") center/70% no-repeat;
+    border: var(--border);
+    border-radius: var(--radius-circle);
+}
+
+.button-accent--transparent:hover {
+    opacity: 1;
+
+}
+
+.title-medium {
+    text-transform: uppercase;
+    font-size: clamp(1.25rem, 2.08vw, 2.5rem);
+    line-height: 1.3;
+    color: var(--color-light);
+}

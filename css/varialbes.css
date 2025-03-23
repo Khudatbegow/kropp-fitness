@@ -1,0 +1,42 @@
+:root {
+    /* Colors */
+    --color-dark: #000000;
+    --color-dark-alternate: #131619;
+    --color-light: #FFFFFF;
+    --color-dark-gray: #404040;
+    --color-light-gray: #C4C4C4;
+
+    /* Font Family */
+    --font-family-base: "Heebo", sans-serif;
+    --font-family-alternate: "Yantramanav", sans-serif;
+
+    /* Font Size */
+    --fs-base: 16px;
+    --fs-14px: 0.875rem;
+    --fs-16px: 1rem;
+    --fs-20px: 1.25rem;
+    --fs-30px: 1.875rem;
+    --fs-40px: 2.5rem;
+    --fs-60px: 3.75rem;
+    --fs-112px: 7rem;
+    --fs-180px: 11.25rem;
+    --fs-360px: 18.75vw;
+
+    /* Font Weight */
+    --light: 300;
+    --bold: 700;
+
+    /* Radius */
+    --radius-30: 1.875rem;
+    --radius-pill: 31.25rem;
+    --radius-circle: 50%;
+
+    /* Others */
+    --base-height-UI: 3.375rem;
+    --large-height-UI: 2.375rem;
+    --header-height: 5.625rem;
+    --border: 1px solid var(--color-light);
+    --container-width: 81.25rem;
+    --container-padding-X: 1rem;
+    --transition-duration: 0.2s;
+}
